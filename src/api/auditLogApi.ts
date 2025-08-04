@@ -24,7 +24,7 @@
 
   // Giữ nguyên hàm này, nó hoạt động đúng
   export const fetchAuditLogs = async ({ page, size, sort }: FetchAuditLogsParams) => {
-    const response = await axios.get(`${API_URL}/api/v1/activity-logs`, {
+    const response = await axios.get(`${API_URL}/activity-logs`, {
       params: { page, size, sort },
     });
 
